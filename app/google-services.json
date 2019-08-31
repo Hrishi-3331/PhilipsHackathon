@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1032845761538",
+    "firebase_url": "https://philipshackathon-989af.firebaseio.com",
+    "project_id": "philipshackathon-989af",
+    "storage_bucket": "philipshackathon-989af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032845761538:android:5501febf6f4070b1",
+        "android_client_info": {
+          "package_name": "com.hackathon.philips.dare2complete.philips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032845761538-7lk34uckaumto2emjki0t463mhujlb4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackathon.philips.dare2complete.philips",
+            "certificate_hash": "20c2b8b746e32d5de32080f9c55f6d1adc3f7fff"
+          }
+        },
+        {
+          "client_id": "1032845761538-7rp3mdgsloejk8hm16q22rsqqbmmc893.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Dvbkc3KKHkfjm6nYZC9R42h6DdVUuMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032845761538-7rp3mdgsloejk8hm16q22rsqqbmmc893.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
