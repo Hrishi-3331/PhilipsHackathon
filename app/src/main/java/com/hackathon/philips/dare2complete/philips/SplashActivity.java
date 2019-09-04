@@ -24,7 +24,8 @@ public class SplashActivity extends AppCompatActivity {
         spash_image = (ImageView)findViewById(R.id.splash_image);
         anim_layout = (LinearLayout)findViewById(R.id.splash_anim);
 
-        mUser = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
 
         animate();
     }
