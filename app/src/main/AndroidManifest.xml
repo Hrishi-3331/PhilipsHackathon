@@ -18,7 +18,11 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Authentication" />
-        <activity android:name=".HospitalReviews"></activity>
+        <activity android:name=".HospitalReviews" />
+        <activity android:name=".DocotorReviews" />
+        <activity android:name=".Appointments.MyAppointments" />
+        <activity android:name=".Appointments.AppointmentDetails" />
+        <activity android:name=".Appointments.HospitalSelect"></activity>
     </application>
 
 </manifest>
