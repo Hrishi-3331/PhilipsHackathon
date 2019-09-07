@@ -170,6 +170,12 @@ public class AppointmentDetails extends AppCompatActivity {
         app_list.setAdapter(adapter);
     }
 
+    public void BookAppointment(View view){
+        Intent intent = new Intent(AppointmentDetails.this, HospitalSelect.class);
+        intent.putExtra("category", category);
+        startActivity(intent);
+    }
+
     public static class AppointmentViewHolder extends RecyclerView.ViewHolder{
 
         private View mView;

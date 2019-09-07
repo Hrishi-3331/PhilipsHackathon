@@ -22,7 +22,8 @@
         <activity android:name=".DocotorReviews" />
         <activity android:name=".Appointments.MyAppointments" />
         <activity android:name=".Appointments.AppointmentDetails" />
-        <activity android:name=".Appointments.HospitalSelect"></activity>
+        <activity android:name=".Appointments.HospitalSelect" />
+        <activity android:name=".Appointments.BookAppointment"></activity>
     </application>
 
 </manifest>

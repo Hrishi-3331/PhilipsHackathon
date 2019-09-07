@@ -107,11 +107,10 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="-15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:layout_marginTop="-12.5dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -135,11 +134,10 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="-15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:layout_marginTop="-12.5dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -178,6 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@color/colorPrimary"
+                    android:onClick="BookAppointment"
                     android:text="Book Appointment Now"
                     android:textColor="@android:color/white"
                     android:textStyle="bold" />

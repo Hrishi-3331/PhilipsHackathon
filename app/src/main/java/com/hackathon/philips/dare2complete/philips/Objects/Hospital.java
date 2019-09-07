@@ -1,28 +1,53 @@
 package com.hackathon.philips.dare2complete.philips.Objects;
 
 public class Hospital {
-
-    private String id;
-    private String Address;
-    private String Department;
-    private String Name;
-    private int Rating;
-    private String Contact;
-    private String Description;
+    private String name;
+    private String address;
+    private String contact;
+    private double rating;
     private String image;
 
     public Hospital() {
     }
 
-    public Hospital(String id, String address, String department, String name, int rating, String contact, String Description, String image) {
-        this.id = id;
-        this.Address = address;
-        this.Department = department;
-        this.Name = name;
-        this.Rating = rating;
-        this.Contact = contact;
-        this.Description = Description;
+    public Hospital(String name, String address, String contact, double rating, String image) {
+        this.name = name;
+        this.address = address;
+        this.contact = contact;
+        this.rating = rating;
         this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 
     public String getImage() {
@@ -31,61 +56,5 @@ public class Hospital {
 
     public void setImage(String image) {
         this.image = image;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String address) {
-        Address = address;
-    }
-
-    public String getDepartment() {
-        return Department;
-    }
-
-    public void setDepartment(String department) {
-        Department = department;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public int getRating() {
-        return Rating;
-    }
-
-    public void setRating(int rating) {
-        Rating = rating;
-    }
-
-    public String getContact() {
-        return Contact;
-    }
-
-    public void setContact(String contact) {
-        Contact = contact;
-    }
-
-    public String getDescription() {
-        return Description;
-    }
-
-    public void setDescription(String description) {
-        Description = description;
     }
 }

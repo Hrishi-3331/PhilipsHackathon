@@ -36,7 +36,7 @@ public class HospitalReviews extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_reviews);
 
-        mRef = FirebaseDatabase.getInstance().getReference().child("Hospital review");
+        mRef = FirebaseDatabase.getInstance().getReference().child("Hospitals");
         hospital_list = (RecyclerView)findViewById(R.id.hospital_list);
 
         manager = new LinearLayoutManager(HospitalReviews.this, LinearLayoutManager.VERTICAL, true);
@@ -50,7 +50,7 @@ public class HospitalReviews extends AppCompatActivity {
        FirebaseRecyclerAdapter<Hospital, HospitalViewHolder> adapter = new FirebaseRecyclerAdapter<Hospital, HospitalViewHolder>(Hospital.class, R.layout.review_block, HospitalViewHolder.class, mRef) {
            @Override
            protected void populateViewHolder(HospitalViewHolder viewHolder, Hospital model, int position) {
-               viewHolder.setmView(model.getName(), model.getImage(), model.getDescription(), model.getRating());
+               viewHolder.setmView(model.getName(), model.getImage(), model.getAddress(), model.getRating());
            }
        };
         hospital_list.setAdapter(adapter);
@@ -62,19 +62,19 @@ public class HospitalReviews extends AppCompatActivity {
         private View mView;
         private ImageView image_block;
         private TextView title_block;
-        private TextView description_block;
-        private RatingBar rating_block;
+        private TextView address_block;
+        private TextView rating_block;
 
         public HospitalViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
             image_block = mView.findViewById(R.id.block_image);
             title_block = mView.findViewById(R.id.block_title);
-            description_block = mView.findViewById(R.id.block_description);
-            rating_block = mView.findViewById(R.id.block_ratingBar);
+            address_block = mView.findViewById(R.id.block_address);
+            rating_block = mView.findViewById(R.id.block_rating);
         }
 
-        public void setmView(String title, String image, String description, int rating){
+        public void setmView(String title, String image, String address, double rating){
             try{
                 Picasso.get().load(image).into(image_block, new Callback() {
                     @Override
@@ -96,7 +96,8 @@ public class HospitalReviews extends AppCompatActivity {
                 e.printStackTrace();
             }
             title_block.setText(title);
-            description_block.setText(description);
+            address_block.setText(address);
+            rating_block.setText(String.valueOf(rating));
         }
 
         private void cropImage() {

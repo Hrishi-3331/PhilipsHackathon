@@ -3,4 +3,5 @@
     <string name="previous_appointments_x25bc">Previous Appointments</string>
     <string name="st1">You had your last appointment </string>
     <string name="st2"> months back. You need to have a checkup now. Book an appointment now!</string>
+    <string name="u00a9">\u2605</string>
 </resources>

@@ -63,18 +63,18 @@ public class DocotorReviews extends AppCompatActivity {
         private ImageView image_block;
         private TextView title_block;
         private TextView description_block;
-        private RatingBar rating_block;
+        private TextView rating_block;
 
         public DoctorView(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
             image_block = mView.findViewById(R.id.block_image);
             title_block = mView.findViewById(R.id.block_title);
-            description_block = mView.findViewById(R.id.block_description);
-            rating_block = mView.findViewById(R.id.block_ratingBar);
+            description_block = mView.findViewById(R.id.block_address);
+            rating_block = mView.findViewById(R.id.block_rating);
         }
 
-        public void setmView(String title, String image, String degree, String specialisation, int rating){
+        public void setmView(String title, String image, String degree, String specialisation, double rating){
             try{
                 Picasso.get().load(image).into(image_block, new Callback() {
                     @Override
