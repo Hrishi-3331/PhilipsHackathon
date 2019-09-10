@@ -34,6 +34,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.hackathon.philips.dare2complete.philips.Appointments.MyAppointments;
 import com.hackathon.philips.dare2complete.philips.Objects.Feed;
 import com.hackathon.philips.dare2complete.philips.Prescription.MyPrescriptions;
+import com.hackathon.philips.dare2complete.philips.SleepMonitoring.SleepTime;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
@@ -128,6 +129,10 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.prescriptions:
                         startActivity(new Intent(MainActivity.this, MyPrescriptions.class));
+                        break;
+
+                    case R.id.message_act:
+                        startActivity(new Intent(MainActivity.this, SleepTime.class));
                         break;
 
                     default:

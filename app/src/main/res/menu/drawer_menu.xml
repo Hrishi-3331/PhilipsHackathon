@@ -7,8 +7,9 @@
       />
 
     <item android:id="@+id/message_act"
-        android:title="Messages"
-        android:icon="@mipmap/ic_message_black_24dp"/>
+        android:title="Sleep Monitoring"
+        android:icon="@android:drawable/ic_lock_idle_alarm"
+        />
 
     <item android:id="@+id/notifications"
         android:title="Student Notices"

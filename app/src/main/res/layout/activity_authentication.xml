@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Authentication.Authentication"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/splash"
     android:id="@+id/colayout"
     >
 

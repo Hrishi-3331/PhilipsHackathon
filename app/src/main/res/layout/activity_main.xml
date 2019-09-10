@@ -152,6 +152,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:layout_marginTop="8dp"
                     android:gravity="center_horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -166,21 +167,40 @@
                         android:orientation="vertical"
                         >
 
-                        <TextView
-                            android:id="@+id/footsteps"
-                            android:padding="8dp"
-                            android:layout_width="wrap_content"
+                        <FrameLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="500 mph"
-                            android:textSize="17sp"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold"
-                            />
+                            >
+
+                            <ImageView
+                                android:tint="@color/colorPrimaryDark"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/trial" />
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:id="@+id/footsteps"
+                                android:padding="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="500 mph"
+                                android:textSize="17sp"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold"
+                                />
+
+                        </FrameLayout>
 
                         <TextView
+                            android:background="@android:color/white"
                             android:textAlignment="center"
                             android:layout_marginTop="-12dp"
-                            android:padding="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Footsteps"
@@ -199,21 +219,41 @@
                         android:orientation="vertical"
                         >
 
-                        <TextView
-                            android:padding="8dp"
-                            android:id="@+id/calories"
-                            android:layout_width="wrap_content"
+                        <FrameLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="50 mph"
-                            android:textSize="16sp"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold"
-                            />
+                            >
+
+                            <ImageView
+                                android:tint="@color/colorPrimaryDark"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/trial" />
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:padding="8dp"
+                                android:id="@+id/calories"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="159"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold"
+                                />
+
+
+                        </FrameLayout>
 
                         <TextView
+                            android:background="@android:color/white"
                             android:textAlignment="center"
                             android:layout_marginTop="-12dp"
-                            android:padding="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Calories Burnt"
@@ -232,20 +272,41 @@
                         android:orientation="vertical"
                         >
 
-                        <TextView
-                            android:padding="8dp"
-                            android:id="@+id/sleep_time"
-                            android:layout_width="wrap_content"
+                        <FrameLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="6 hrs"
-                            android:textSize="16sp"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold"
-                            />
+                            >
+
+                            <ImageView
+                                android:tint="@color/colorPrimaryDark"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/trial" />
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:padding="8dp"
+                                android:id="@+id/sleep_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="6 hrs"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorAccent"
+                                android:textStyle="bold"
+                                />
+
+
+                        </FrameLayout>
 
                         <TextView
+                            android:background="@android:color/white"
+                            android:textAlignment="center"
                             android:layout_marginTop="-12dp"
-                            android:padding="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="8dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Sleep Time"
@@ -260,17 +321,10 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
-                android:background="@color/colorPrimary"
-                />
-
             <!-- Air quality dashboard -->
 
             <LinearLayout
+                android:layout_marginTop="-24dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:background="@drawable/curvedbottom"
