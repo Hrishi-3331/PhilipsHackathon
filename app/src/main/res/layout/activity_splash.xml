@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/splash"
     android:gravity="center"
     tools:context=".SplashActivity">
 
@@ -29,13 +30,13 @@
             android:layout_marginTop="35dp"
             android:layout_width="160dp"
             android:layout_height="3dp"
-            android:background="@android:color/black"
+            android:background="@android:color/darker_gray"
             >
 
             <LinearLayout
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/darker_gray"
+                android:background="@android:color/white"
                 android:id="@+id/splash_anim"
                 android:orientation="vertical"
                 />
@@ -43,5 +44,17 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fontFamily="serif"
+        android:padding="12dp"
+        android:text='"Technology that cares for you!"'
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
 
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.hackathon.philips.dare2complete.philips.Authentication.Authentication;
 
 public class SplashActivity extends AppCompatActivity {
 

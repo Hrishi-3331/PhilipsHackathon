@@ -68,12 +68,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="-25dp"
+                android:layout_marginTop="-40dp"
                 android:background="@drawable/attend_card"
-                android:orientation="vertical"
-                android:padding="4dp"
                 android:elevation="2dp"
-                >
+                android:orientation="vertical"
+                android:padding="4dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -88,32 +87,29 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/colorPrimary"
-                    />
+                    android:background="@color/colorPrimary" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    >
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
                         android:text="Select Date :"
-                        android:textStyle="bold"
-                        android:textSize="15sp"
                         android:textColor="@android:color/black"
-                        />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:onClick="selectDate"
                         android:id="@+id/date_select"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/login_input"
+                        android:onClick="selectDate"
                         android:text="Click to select"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -124,26 +120,24 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    >
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
                         android:text="Select Slot :"
-                        android:textStyle="bold"
-                        android:textSize="15sp"
                         android:textColor="@android:color/black"
-                        />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:onClick="selectSlot"
                         android:id="@+id/slot_select"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/login_input"
+                        android:onClick="selectSlot"
                         android:text="Click to select"
                         android:textSize="15sp"
                         android:textStyle="bold" />

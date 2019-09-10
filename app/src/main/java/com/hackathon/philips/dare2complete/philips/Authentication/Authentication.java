@@ -1,4 +1,4 @@
-package com.hackathon.philips.dare2complete.philips;
+package com.hackathon.philips.dare2complete.philips.Authentication;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -37,6 +37,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.hackathon.philips.dare2complete.philips.MainActivity;
+import com.hackathon.philips.dare2complete.philips.R;
 
 import java.util.Objects;
 

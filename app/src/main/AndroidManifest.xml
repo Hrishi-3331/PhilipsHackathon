@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hackathon.philips.dare2complete.philips">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,13 +21,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Authentication" />
-        <activity android:name=".HospitalReviews" />
-        <activity android:name=".DocotorReviews" />
+        <activity android:name=".Authentication.Authentication" />
+        <activity android:name=".Reviews.HospitalReviews" />
+        <activity android:name=".Reviews.DocotorReviews" />
         <activity android:name=".Appointments.MyAppointments" />
         <activity android:name=".Appointments.AppointmentDetails" />
         <activity android:name=".Appointments.HospitalSelect" />
-        <activity android:name=".Appointments.BookAppointment"></activity>
+        <activity android:name=".Appointments.BookAppointment" />
+        <activity android:name=".DetailFeed" />
+        <activity android:name=".Prescription.MyPrescriptions"></activity>
     </application>
 
 </manifest>

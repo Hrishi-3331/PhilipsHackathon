@@ -1,4 +1,4 @@
-package com.hackathon.philips.dare2complete.philips;
+package com.hackathon.philips.dare2complete.philips.Reviews;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -15,13 +15,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.hackathon.philips.dare2complete.philips.Objects.Hospital;
+import com.hackathon.philips.dare2complete.philips.R;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
