@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("");
 
         mDrawer = (DrawerLayout) findViewById(R.id.mDrawer);
         mNavigation = (NavigationView) findViewById(R.id.mNavigation);

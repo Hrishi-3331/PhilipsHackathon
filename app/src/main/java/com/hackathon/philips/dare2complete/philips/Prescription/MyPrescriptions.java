@@ -1,9 +1,11 @@
 package com.hackathon.philips.dare2complete.philips.Prescription;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
@@ -47,6 +49,14 @@ public class MyPrescriptions extends AppCompatActivity {
             }
         };
         presView.setAdapter(adapter);
+    }
+
+    public void goToHistory(View view){
+        startActivity(new Intent(MyPrescriptions.this, PrescriptionHistory.class));
+    }
+
+    public void goBack(View view){
+        finish();
     }
 
 }

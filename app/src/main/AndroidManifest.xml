@@ -29,7 +29,9 @@
         <activity android:name=".Appointments.HospitalSelect" />
         <activity android:name=".Appointments.BookAppointment" />
         <activity android:name=".DetailFeed" />
-        <activity android:name=".Prescription.MyPrescriptions"></activity>
+        <activity android:name=".Prescription.MyPrescriptions" />
+        <activity android:name=".Prescription.PrescriptionHistory" />
+        <activity android:name=".Prescription.DetailedPrescription"></activity>
     </application>
 
 </manifest>
