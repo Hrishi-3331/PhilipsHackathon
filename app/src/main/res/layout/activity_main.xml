@@ -38,7 +38,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_gravity="center"
                     android:layout_marginLeft="-50dp"
-                    android:layout_marginRight="60dp"
+                    android:layout_marginRight="20dp"
                     android:src="@drawable/title_new_white"
                    />
 
@@ -53,6 +53,7 @@
             >
 
         <LinearLayout
+            android:background="#edf0f2"
             android:layout_marginBottom="60dp"
             android:layout_marginTop="60dp"
             android:layout_width="match_parent"
@@ -63,7 +64,10 @@
             <!-- Health Dashboard -->
 
             <LinearLayout
-                android:background="@android:color/white"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/curvedtop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -267,7 +271,9 @@
             <!-- Air quality dashboard -->
 
             <LinearLayout
-                android:background="@android:color/white"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/curvedbottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"

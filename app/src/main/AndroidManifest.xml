@@ -31,7 +31,8 @@
         <activity android:name=".DetailFeed" />
         <activity android:name=".Prescription.MyPrescriptions" />
         <activity android:name=".Prescription.PrescriptionHistory" />
-        <activity android:name=".Prescription.DetailedPrescription"></activity>
+        <activity android:name=".Prescription.DetailedPrescription" />
+        <activity android:name=".EmergencyContacts"></activity>
     </application>
 
 </manifest>
