@@ -1,5 +1,7 @@
 package com.hackathon.philips.dare2complete.philips.Reviews;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -51,6 +53,7 @@ public class HospitalReviews extends AppCompatActivity {
            @Override
            protected void populateViewHolder(HospitalViewHolder viewHolder, Hospital model, int position) {
                viewHolder.setmView(model.getName(), model.getImage(), model.getAddress(), model.getRating());
+               viewHolder.setOnclickListeners(HospitalReviews.this, getRef(position).getKey());
            }
        };
         hospital_list.setAdapter(adapter);
@@ -125,6 +128,17 @@ public class HospitalReviews extends AppCompatActivity {
             return output;
         }
 
+
+        public void setOnclickListeners(final Context context, final String id){
+            mView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(context, DetailReviews.class);
+                    intent.putExtra("id", id);
+                    context.startActivity(intent);
+                }
+            });
+        }
     }
 
     public void goBack(View view){

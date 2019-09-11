@@ -32,8 +32,10 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.hackathon.philips.dare2complete.philips.Appointments.MyAppointments;
+import com.hackathon.philips.dare2complete.philips.Authentication.Authentication;
 import com.hackathon.philips.dare2complete.philips.Objects.Feed;
 import com.hackathon.philips.dare2complete.philips.Prescription.MyPrescriptions;
+import com.hackathon.philips.dare2complete.philips.Reviews.HospitalReviews;
 import com.hackathon.philips.dare2complete.philips.SleepMonitoring.SleepTime;
 import com.squareup.picasso.Picasso;
 
@@ -133,6 +135,16 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.message_act:
                         startActivity(new Intent(MainActivity.this, SleepTime.class));
+                        break;
+
+                    case R.id.reviews:
+                        startActivity(new Intent(MainActivity.this, HospitalReviews.class));
+                        break;
+
+                    case R.id.logout:
+                        mAuth.signOut();
+                        startActivity(new Intent(MainActivity.this, Authentication.class));
+                        finish();
                         break;
 
                     default:

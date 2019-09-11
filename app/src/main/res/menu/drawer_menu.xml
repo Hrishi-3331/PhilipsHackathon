@@ -11,16 +11,8 @@
         android:icon="@android:drawable/ic_lock_idle_alarm"
         />
 
-    <item android:id="@+id/notifications"
-        android:title="Student Notices"
-        android:icon="@mipmap/baseline_notifications_black_24"/>
-
-    <item android:id="@+id/friends"
-        android:title="Somophores"
-        android:icon="@mipmap/baseline_people_black_24"/>
-
-    <item android:id="@+id/tnp"
-        android:title="Training and Placements"
+    <item android:id="@+id/reviews"
+        android:title="Hospital Reviews"
         android:icon="@mipmap/baseline_people_black_24"/>
 
     <item android:id="@+id/contact"
