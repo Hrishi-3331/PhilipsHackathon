@@ -3,6 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:padding="3dp"
+    android:layout_marginTop="3dp"
+    android:background="@android:color/white"
     android:layout_height="wrap_content">
 
     <TextView
@@ -17,27 +20,40 @@
         android:textSize="15sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/rater_rating"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@android:drawable/btn_star"
-        android:drawablePadding="12sp"
-        android:drawableTint="@color/colorPrimary"
-        android:gravity="center_vertical"
-        android:paddingBottom="6dp"
-        android:paddingLeft="12dp"
-        android:paddingTop="6dp"
-        android:text="/u2605"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            android:padding="10dp"
+            android:text="@string/u00a9"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/rater_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-15dp"
+            android:padding="10dp"
+            android:text="4.5"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <TextView
+        android:id="@+id/rating_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:id="@+id/rating_content"
-        android:padding="4dp"
-        />
+        android:layout_marginTop="-15dp"
+        android:padding="8dp"
+        android:textSize="14sp" />
 
 </LinearLayout>

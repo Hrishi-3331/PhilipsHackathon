@@ -121,6 +121,47 @@
                 android:textColor="@android:color/black"
                 android:textSize="15sp" />
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/baseline_people_black_24"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="Staff"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hosp_doctors"
+                >
+
+
+
+            </android.support.v7.widget.RecyclerView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -168,7 +209,7 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     >
-                    
+
                     <FrameLayout
                         android:layout_width="100dp"
                         android:layout_height="100dp">
@@ -191,7 +232,7 @@
                             android:textColor="@color/colorPrimary"
                             android:textSize="32sp"
                             android:textStyle="bold" />
-                        
+
                     </FrameLayout>
 
                 </LinearLayout>
@@ -212,7 +253,6 @@
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
-                android:background="@android:color/darker_gray"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/hosp_reviews"
@@ -224,42 +264,83 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:gravity="center"
                 >
 
-                <ImageButton
-                    android:layout_width="20dp"
-                    android:layout_height="25dp"
-                    android:layout_marginLeft="15dp"
-                    android:background="@android:color/transparent"
-                    android:scaleType="fitXY"
-                    android:src="@mipmap/baseline_people_black_24"
-                    android:tint="@color/colorPrimary" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:drawableTint="@color/colorPrimary"
+                    android:orientation="horizontal"
                     android:gravity="center_vertical"
-                    android:padding="8dp"
-                    android:text="Staff"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    >
 
-            </LinearLayout>
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/baseline_account_circle_black_24"
+                        android:tint="@color/colorPrimary" />
 
-            <android.support.v7.widget.RecyclerView
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="Write a Review"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <RatingBar
+                    android:id="@+id/hosp_m_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:focusableInTouchMode="true"
+                android:background="@android:color/transparent"
+                android:elevation="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/hosp_doctors"
+                android:orientation="horizontal"
+                android:gravity="center"
                 >
 
+                <EditText
+                    android:id="@+id/review_box"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/comment_text_box"
+                    android:hint="Write a review"
+                    android:inputType="textMultiLine"
+                    android:maxHeight="80dp"
+                    android:padding="14dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp" />
 
+                <ImageButton
+                    android:onClick="postComment"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/ic_send_circle_black_48dp"
+                    android:backgroundTint="@color/colorPrimary" />
 
-            </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 

@@ -2,33 +2,25 @@ package com.hackathon.philips.dare2complete.philips.Objects;
 
 public class Review {
 
-    private String Content;
-    private String rater_id;
+    private String content;
+    private String name;
     private Double rating;
 
     public Review() {
     }
 
-    public Review(String content, String rater_id, Double rating) {
-        Content = content;
-        this.rater_id = rater_id;
+    public Review(String content, String name, Double rating) {
+        this.content = content;
+        this.name = name;
         this.rating = rating;
     }
 
     public String getContent() {
-        return Content;
+        return content;
     }
 
     public void setContent(String content) {
-        Content = content;
-    }
-
-    public String getRater_id() {
-        return rater_id;
-    }
-
-    public void setRater_id(String rater_id) {
-        this.rater_id = rater_id;
+        this.content = content;
     }
 
     public Double getRating() {
@@ -37,5 +29,13 @@ public class Review {
 
     public void setRating(Double rating) {
         this.rating = rating;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
